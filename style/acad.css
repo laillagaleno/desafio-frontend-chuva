@@ -1,0 +1,82 @@
+body main {
+  width: 100vw;
+  height: 100vh;
+}
+
+body main .nav-menu {
+  background: red;
+  height: 100vh;
+  width: 220px;
+}
+
+body main .container {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+body main .container .container-main .container-header {
+  height: 68px;
+}
+
+body main .container .container-main .container-header .header-title {
+  background: pink;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+}
+
+body main .container .container-main .container-header .header-language {
+  background: yellow;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+body main .container .container-main .container-header .header-autor {
+  background: blue;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+body main .container .container-main .container-column .column-video {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+}
+
+body main .container .container-main .container-column .column-video .video-title {
+  background: pink;
+}
+
+body main .container .container-main .container-column .column-video .video-link {
+  background: red;
+}
+
+body main .container .container-main .container-column .column-details {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+body main .container .container-main .container-column .column-details .details-buttons {
+  background: #983546;
+}
+
+body main .container .container-main .container-column .column-details .details-infor {
+  background: yellow;
+}
+
+body main .container .container-main .container-line .line-abstract {
+  background: #983546;
+}
+
+body main .container .container-main .container-line .line-talk {
+  background: yellow;
+}
+
+body main .container .container-footer {
+  background-color: purple;
+}
+/*# sourceMappingURL=acad.css.map */
