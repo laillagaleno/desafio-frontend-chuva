@@ -9,7 +9,10 @@
 
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/acad.css">
-    
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
     <!-- font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap');
@@ -18,40 +21,76 @@
 </head>
 
 <body>
-    <main class="fr">
-        <div class="nav-menu fc f-a-flexStart">
-           <h1>menu</h1>
-        </div>
-        <div class="container fc f-j-spaceBetween">
-            <div class="container-main fc">
+    <main class="main fr">
+        <nav class="nav-menu fc f-a-flexStart">
+           <div class="menu-header fc  f-center ">
+                <div class="menu-title fc f-center">
+                   <h2>Slaca 2019</h2>
+                </div>
+                <img src="assets/icon.svg" alt="Logo do evento"> 
+           </div>
+         
+            <ul class="menu-itens">
+                <li>
+                    <a href="#nav2"><span> Apresentação </span></a>
+                </li>
+
+                <li>
+                    <a href="#nav2"><span>Comitês</span></a>
+                </li>
+
+                <li>
+                    <a href="#nav2"><span>Autores</span></a>
+                </li>
+
+              
+                <li>
+                    <a href="#nav2"><span>Eixos temáticos</span></a>
+                </li>
+         
+                <li>
+                    <a href="#nav1"><span>Trabalhos</span></a>
+                </li>
+
+                <li>
+                    <a href="#nav2"><span>Contato</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div target id="nav1" class="container fc f-j-spaceBetween">
+            <div  class="container-main fc">
                 <div class="container-header fr">
-                    <div class="header-title">
-                        <h1>menu</h1>
+                    <div class="container-title">
+                        <h1>titulo</h1>
                     </div>
-                    <div class="header-language">
-                        <h1>menu</h1>
+                    <div class="container-language">
+                        <h1>buttom</h1>
                     </div>
-                    <div class="header-autor">
-                        <h1>menu</h1>
+                    <div class="container-autor">
+                        <h1>perfil</h1>
                     </div>
                 </div>
                 <div class="container-column fr">
                     <div class="column-video fc">
-                        <div class="video-title"><h1>menu</h1></div>
-                        <div class="video-link"><h1>menu</h1></div>
+                        <div class="video-title"><h1>titulo do video</h1></div>
+                        <div class="video-link"><h1>video</h1></div>
                     </div>
                     <div class="column-details fc">
-                        <div class="details-buttons"><h1>menu</h1></div>
-                        <div class="details-infor"><h1>menu</h1></div>
+                        <div class="details-buttons"><h1>botoes</h1></div>
+                        <div class="details-infor"><h1>detalhes</h1></div>
                     </div>
                 </div>
                 <div class="container-line fc">
-                    <div class="line-abstract"><h1>menu</h1></div>
-                    <div class="line-talk"><h1>menu</h1></div>
+                    <div class="line-abstract"><h1>resumo</h1></div>
+                    <div class="line-talk"><h1>comentarios</h1></div>
                 </div>
             </div>
             
-            <div class="container-footer"><h1>menu</h1></div>
+            <div class="container-footer"><h1>footer</h1></div>
+        </div>
+
+        <div  target id="nav2">
+           Página em construção
         </div>
     </main>
 </body>

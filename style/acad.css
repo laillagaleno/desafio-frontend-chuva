@@ -4,9 +4,54 @@ body main {
 }
 
 body main .nav-menu {
-  background: red;
   height: 100vh;
   width: 220px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+body main .nav-menu .menu-header .menu-title {
+  background: var(--gradient-menu);
+  width: 100%;
+  height: 68px;
+  color: var(--white);
+}
+
+body main .nav-menu .menu-itens {
+  width: 100%;
+  height: auto;
+}
+
+body main .nav-menu .menu-itens li {
+  width: 100%;
+  height: 33px;
+  border-bottom: 2px solid var(--gray-50);
+  background: var(--gradient-link);
+  cursor: pointer;
+}
+
+body main .nav-menu .menu-itens li a {
+  width: auto;
+  height: 100%;
+  background: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main .nav-menu .menu-itens li a span {
+  color: var(--orange-gray);
+  margin-left: 24px;
+}
+
+body main .nav-menu .menu-itens li .active {
+  background: var(--orange-50);
+  margin-left: 5px;
 }
 
 body main .container {
@@ -19,21 +64,21 @@ body main .container .container-main .container-header {
   height: 68px;
 }
 
-body main .container .container-main .container-header .header-title {
+body main .container .container-main .container-header .container-title {
   background: pink;
   -webkit-box-flex: 4;
       -ms-flex-positive: 4;
           flex-grow: 4;
 }
 
-body main .container .container-main .container-header .header-language {
+body main .container .container-main .container-header .container-language {
   background: yellow;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-body main .container .container-main .container-header .header-autor {
+body main .container .container-main .container-header .container-autor {
   background: blue;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
@@ -78,5 +123,13 @@ body main .container .container-main .container-line .line-talk {
 
 body main .container .container-footer {
   background-color: purple;
+}
+
+main [target] {
+  display: none;
+}
+
+main div:target {
+  display: block;
 }
 /*# sourceMappingURL=acad.css.map */

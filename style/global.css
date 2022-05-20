@@ -8,6 +8,7 @@
   border: none;
   list-style-type: none;
   list-style: none;
+  text-decoration: none;
 }
 
 html{
@@ -45,13 +46,14 @@ h6{
 i{
   font-size: 1.6rem;
 }
-a{
+span{
   font-size: 1.5rem;
+ 
 }
 p{
   font-size: 1.4rem;
 }
-span{
+a{
   font-size: 1.2rem;
 }
 
@@ -110,4 +112,5 @@ span{
   --gray-700: #595959;
   --gray-800: #4E4E4E;
   --gray-900: #4D4D4D;
+
 }
