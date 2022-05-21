@@ -13,6 +13,7 @@
 
 html{
   font: 62.5% Roboto, sans-serif; /*1rem =10px*/
+  color: var(--orange-gray);
 }
 
 body{
@@ -89,6 +90,10 @@ a{
   justify-content: flex-end;
 }
 
+.f-j-spaceEvenly{
+  justify-content: space-evenly;
+}
+
 :root{
   --gradient-menu: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
   --gradient-link: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
@@ -101,8 +106,8 @@ a{
 
   --white:#FFFFFF;
   --gray-background-10: #F8F8F8;
-  --gray-background-20:#ECECEC;
-  
+  --gray-border:#ECECEC;
+ 
   
   --gray-50: #E7E7E7;
   --gray-100: #BFBFBF;
@@ -112,5 +117,6 @@ a{
   --gray-700: #595959;
   --gray-800: #4E4E4E;
   --gray-900: #4D4D4D;
+  --black-500:#333333;
 
 }
