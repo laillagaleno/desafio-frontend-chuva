@@ -46,6 +46,7 @@ h6{
 }
 i{
   font-size: 1.6rem;
+  font-style: normal;
 }
 span{
   font-size: 1.5rem;
@@ -56,6 +57,7 @@ p{
 }
 a{
   font-size: 1.2rem;
+  text-decoration: none;
 }
 
 .fc{
@@ -97,12 +99,13 @@ a{
 :root{
   --gradient-menu: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
   --gradient-link: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
-  --gradient-buttom-add: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  --gradient-button: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
 
   --orange-50: #FDF1EB;
   --orange-100: #ED7839;
   --orange-gray: #725C5C;
-
+  --purple: #71478E;
+  --danger:#F85959;
 
   --white:#FFFFFF;
   --gray-background-10: #F8F8F8;
