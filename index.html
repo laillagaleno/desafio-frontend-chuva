@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style/acad.css">
    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+   
 
     <!-- font -->
     <style>
@@ -24,7 +24,7 @@
     <main class="fr">
 
         <div class="menu fr">
-            <nav id="nav-menu" class="nav-menu fc f-a-flexStart">
+            <nav class="nav-menu fc f-a-flexStart">
                 <div class="menu-header fc f-center ">
                         <div class="fc f-center menu-title">
                             <h2>Slaca 2019</h2>
@@ -58,7 +58,7 @@
                     </li>
                 </ul>
             </nav>
-            <button onclick="showMenu()" id="show-menu">
+            <button id="show-menu">
                 <span>
                     <img id="icon-menu" src="/assets/arrow.svg" alt="">
                 </span>
@@ -76,17 +76,18 @@
                         <i>Issn: 1234-5678</i>
                     </div>
                     <div class="fr f-center">
-                        <div class="container-language ">
-                             
-                            <select class="fr f-center f-j-spaceEvenly" name="select">
-                                <option value="valor1" elected>
-                                    <img src="/assets/language.svg" alt="Ícone do botão de linguagem">
-                                    <p>pt, br</p>
-                                    <img src="/assets/dropdown.svg" alt="Ícone de seta do botão de linguagem">
-                                </option>
-                                <option value="valor2">en, en</option>
-                                <option value="valor3">Valor 3</option>
-                            </select>
+                        <div class="fc container-language">
+                            <div class="select fr f-center f-j-spaceEvenly">
+                                <img src="/assets/language.svg" alt="Ícone do botão de linguagem">
+                                <p id="select">pt, br</p>
+                                <img src="/assets/dropdown.svg" alt="Ícone de seta do botão de linguagem">
+                            </div>
+                            
+                            <ul class="itens">
+                                <li class="option">pt, br</li>
+                                <li class="option">en, en</li>
+                            </ul>
+            
                         </div>
                         <div class="container-autor fr">
                             <div class="autor-infor"> 
@@ -165,16 +166,23 @@
                                 <h5>Resumo</h5>
                             </div>
                             <div class="abstract-text margin-main">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.
+                                <div id="text">
+                                    
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.
+                                    </p>
+                                    <p>
+                                        Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
+                                    </p>
+                                    <p>
+                                        Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.
+                                    </p>
+                                    <p>
+                                        Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    </p>
 
-                                Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
-
-                                Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.
-
-                                Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                            <a href="">ver mais.</a>
+                                </div>
+                                <a class="more">ver mais</a>
                            </div>
                         </div>
                         <div class="card">
@@ -193,7 +201,7 @@
                                 </div>
                                 <div class="talk-button">
                                     <hr>
-                                    <button class="fr">
+                                    <button class="fr f-a-center f-j-spaceEvenly">
                                         <img src="/assets/add.svg" alt="Ícone de adicionar novo tópico">
                                         <span>criar tópico</span>
                                     </button>
@@ -233,7 +241,7 @@
             <div class="container-footer ">
                 <hr>
                 <div class="fr padding-footer">
-                    <div class="footer-logo fc">
+                    <div class="footer-logo fc f-center">
                         <div>
                             <img src="/assets/logo.png" alt="Logo da Galoá">
                         </div>
@@ -241,7 +249,7 @@
                             <i>anais e proceedings</i>
                         </div>
                         <button>
-                            <a>Saiba mais</a>
+                            <a href="https://galoa.com.br/" >Saiba mais</a>
                         </button>
                     </div>
                     <div class="footer-descri">
@@ -257,5 +265,7 @@
             <h4>Em breve, novas funcionalidades estão por vim!</h4>
         </div>
     </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
