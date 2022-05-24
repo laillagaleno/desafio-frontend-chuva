@@ -751,10 +751,28 @@ main div:target {
     width: 0px;
     min-width: 0px;
   }
+  body main .menu .nav-menu .menu-title h2 {
+    display: none;
+  }
+  body main .menu .nav-menu img {
+    display: none;
+  }
+  body main .menu .nav-menu .menu-itens {
+    display: none;
+  }
   body main .menu .hide {
     -webkit-transition: width 0.5s;
     transition: width 0.5s;
     width: 220px;
+  }
+  body main .menu .hide .menu-title h2 {
+    display: inline;
+  }
+  body main .menu .hide img {
+    display: inline;
+  }
+  body main .menu .hide .menu-itens {
+    display: inline;
   }
   body main .menu #show-menu {
     height: 100vh;

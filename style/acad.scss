@@ -711,11 +711,39 @@ main div:target{
         transition: width 0.5s;
         width: 0px;
         min-width: 0px;
+
+        .menu-title{
+          h2{
+            display: none;
+          }
+         
+        }
+        img{
+          display: none;
+        }
+
+        .menu-itens{
+          display: none;
+        }
+        
       }
   
       .hide{
           transition: width 0.5s;
           width: 220px;
+
+          .menu-title{
+            h2{
+              display: inline;
+            }
+         
+          }
+          img{
+            display: inline;
+          }
+          .menu-itens{
+            display: inline;
+          }
       }
       
       #show-menu{
