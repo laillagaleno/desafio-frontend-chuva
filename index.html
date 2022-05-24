@@ -22,14 +22,16 @@
 
 <body>
     <main class="fr">
-        <nav class="nav-menu fc f-a-flexStart">
-            <div class="menu-header fc f-center ">
-                    <div class="menu-title fc f-center">
-                        <h2>Slaca 2019</h2>
-                    </div>
-                    <img src="assets/icon.svg" alt="Logo do evento"> 
-            </div>
-                <ul class="menu-itens">
+
+        <div class="menu fr">
+            <nav id="nav-menu" class="nav-menu fc f-a-flexStart">
+                <div class="menu-header fc f-center ">
+                        <div class="fc f-center menu-title">
+                            <h2>Slaca 2019</h2>
+                        </div>
+                        <img src="assets/icon.svg" alt="Logo do evento"> 
+                </div>
+                <ul id="itens" class="menu-itens">
                     <li>
                         <a href="#nav2"><span>Apresentação</span></a>
                     </li>
@@ -55,12 +57,14 @@
                         <a href="#nav2"><span>Contato</span></a>
                     </li>
                 </ul>
-        </nav>
-        <div id="show-menu">
-            <span>
-                <div id="icon-menu"></div>
-            </span>
+            </nav>
+            <button onclick="showMenu()" id="show-menu">
+                <span>
+                    <img id="icon-menu" src="/assets/arrow.svg" alt="">
+                </span>
+            </button>
         </div>
+       
      
 
         <div target id="nav1" class="container fc f-j-spaceBetween">
@@ -73,11 +77,16 @@
                     </div>
                     <div class="fr f-center">
                         <div class="container-language ">
-                            <button class="fr f-center f-j-spaceEvenly">
-                                <img src="/assets/language.svg" alt="Ícone do botão de linguagem">
-                                <p>pt, br</p>
-                                <img src="/assets/dropdown.svg" alt="Ícone de seta do botão de linguagem">
-                            </button>
+                             
+                            <select class="fr f-center f-j-spaceEvenly" name="select">
+                                <option value="valor1" elected>
+                                    <img src="/assets/language.svg" alt="Ícone do botão de linguagem">
+                                    <p>pt, br</p>
+                                    <img src="/assets/dropdown.svg" alt="Ícone de seta do botão de linguagem">
+                                </option>
+                                <option value="valor2">en, en</option>
+                                <option value="valor3">Valor 3</option>
+                            </select>
                         </div>
                         <div class="container-autor fr">
                             <div class="autor-infor"> 
@@ -232,7 +241,7 @@
                             <i>anais e proceedings</i>
                         </div>
                         <button>
-                            <i>Saiba mais</i>
+                            <a>Saiba mais</a>
                         </button>
                     </div>
                     <div class="footer-descri">

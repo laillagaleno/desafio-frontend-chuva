@@ -1,3 +1,5 @@
+
+
 $( document ).ready(function() {
 
      window.location.assign("#nav1");
@@ -22,4 +24,12 @@ $( document ).ready(function() {
         });
  });
 
- 
+ //dinamica do menu
+ function showMenu(){
+     var menu = document.getElementById("nav-menu");
+     var button = document.getElementById("icon-menu");
+
+     menu.classList.toggle("hide");
+     button.classList.toggle("hide-icon");
+
+ }

@@ -4,74 +4,49 @@ body main {
   position: relative;
 }
 
-body main #show-menu {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  left: 220px;
-  -webkit-transition: left 0.5s;
-  transition: left 0.5s;
+body main .menu {
+  position: relative;
 }
 
-body main #show-menu span {
-  background-color: var(--orange-100);
-  border-radius: 0 50% 50% 0;
-  width: 25px;
-  height: 40px;
-  padding: 8px;
-}
-
-body main #show-menu span #icon-menu {
-  background-image: url(/assets/arrow.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-}
-
-body main .nav-menu {
+body main .menu .nav-menu {
   height: 100vh;
   min-width: 220px;
   width: 0px;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   z-index: 1000;
+  background: white;
   -webkit-transition: min-width 0.5s;
   transition: min-width 0.5s;
 }
 
-body main .nav-menu .menu-header {
+body main .menu .nav-menu .menu-header {
   width: 100%;
 }
 
-body main .nav-menu .menu-header .menu-title {
+body main .menu .nav-menu .menu-header .menu-title {
   background: var(--gradient-menu);
   width: 100%;
   height: 68px;
   color: var(--white);
   text-transform: uppercase;
+  overflow: hidden;
+  overflow-wrap: break-word;
 }
 
-body main .nav-menu .menu-header img {
+body main .menu .nav-menu .menu-header img {
   background-size: auto;
   width: 100%;
 }
 
-body main .nav-menu .menu-itens {
+body main .menu .nav-menu .menu-itens {
   width: 100%;
   height: auto;
+  overflow: hidden;
+  overflow-wrap: break-word;
 }
 
-body main .nav-menu .menu-itens li {
+body main .menu .nav-menu .menu-itens li {
   width: 100%;
   height: 33px;
   border-bottom: 2px solid var(--gray-50);
@@ -79,7 +54,7 @@ body main .nav-menu .menu-itens li {
   cursor: pointer;
 }
 
-body main .nav-menu .menu-itens li a {
+body main .menu .nav-menu .menu-itens li a {
   width: auto;
   height: 100%;
   background: var(--white);
@@ -93,16 +68,20 @@ body main .nav-menu .menu-itens li a {
   transition: 0.5s;
 }
 
-body main .nav-menu .menu-itens li a span {
+body main .menu .nav-menu .menu-itens li a span {
   color: var(--orange-gray);
   margin-left: 24px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
 }
 
-body main .nav-menu .menu-itens li .active {
+body main .menu .nav-menu .menu-itens li .active {
   background: var(--orange-50);
   margin-left: 5px;
+}
+
+body main .menu #show-menu {
+  display: none;
 }
 
 body main .container {
@@ -148,16 +127,34 @@ body main .container .container-main .container-header .container-title i {
   text-decoration: none;
 }
 
-body main .container .container-main .container-header .container-language button {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+body main .container .container-main .container-header .container-language {
   width: 97px;
   height: 34px;
   border: 1px solid #CCCCCC;
   border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .container .container-main .container-header .container-language select {
+  width: 80px;
   background: transparent;
   text-transform: uppercase;
-  color: var(--black-500);
+  background-image: url(/assets/language.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: left;
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 body main .container .container-main .container-header .container-autor {
@@ -278,6 +275,15 @@ body main .container .container-main .margin .container-column .column-details .
   padding: 6px 12px;
   background: var(--orange-100);
   margin-left: 5px;
+  transition: box-shadow 0.25s ease, transform .25s ease, -webkit-transform .25s ease;
+}
+
+body main .container .container-main .margin .container-column .column-details .details-buttons .buttons button:hover {
+  -webkit-transform: translate3d(0, -3px, 0);
+          transform: translate3d(0, -3px, 0);
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  background: var(--gradient-button);
 }
 
 body main .container .container-main .margin .container-column .column-details .details-buttons .buttons i {
@@ -458,6 +464,13 @@ body main .container .container-main .margin .container-line .talk-button button
   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
   border-radius: 4px;
+  transition: box-shadow 0.25s ease, transform .25s ease, -webkit-transform .25s ease;
+}
+
+body main .container .container-main .margin .container-line .talk-button button:hover {
+  -webkit-transform: translate3d(0, -3px, 0);
+          transform: translate3d(0, -3px, 0);
+  background: var(--gradient-menu);
 }
 
 body main .container .container-main .margin .container-line .talk-button button span {
@@ -541,25 +554,8 @@ body main .container .container-main .margin .container-line .talk-comment .comm
   padding: 3px 6px;
 }
 
-body main .container .container-main .margin .card {
-  border-radius: 3px;
-  border: 1px solid var(--gray-border);
-}
-
-body main .container .container-main .margin .card .header-top {
-  background: var(--orange-50);
-  padding: 10px 15px;
-  border-bottom: 1px solid var(--gray-border);
-}
-
-body main .container .container-main .margin .card .header-top h5 {
-  font-weight: 500;
-  line-height: 25px;
-  color: var(--gray-800);
-}
-
-body main .container .container-main .margin .card .margin-main {
-  margin: 15px;
+body main .container .container-main .margin .container-line .talk-comment .comment-buttons button:hover {
+  background: var(--gradient-menu);
 }
 
 body main .container .container-footer {
@@ -622,7 +618,7 @@ body main .container .container-footer .padding-footer .footer-logo button {
   border-radius: 6px;
 }
 
-body main .container .container-footer .padding-footer .footer-logo button i {
+body main .container .container-footer .padding-footer .footer-logo button a {
   font-weight: 100;
   font-family: 'Quicksand';
   color: var(--white);
@@ -690,6 +686,31 @@ body main #nav2 h4 {
   color: var(--gray-100);
 }
 
+.card {
+  border-radius: 3px;
+  border: 1px solid var(--gray-border);
+}
+
+.card .header-top {
+  background: var(--orange-50);
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--gray-border);
+}
+
+.card .header-top h5 {
+  font-weight: 500;
+  line-height: 25px;
+  color: var(--gray-800);
+}
+
+.card .margin-main {
+  margin: 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
 main [target] {
   display: none;
 }
@@ -719,22 +740,23 @@ main div:target {
 }
 
 @media (max-width: 1024px) {
-  body main .nav-menu {
+  body main .menu {
+    position: absolute;
+  }
+  body main .menu .nav-menu {
     -webkit-transition: min-width 0.5s;
     transition: min-width 0.5s;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
     width: 0px;
     min-width: 0px;
   }
-  body main .nav-menu .menu-title h2 {
-    display: none;
+  body main .menu .hide {
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+    width: 220px;
   }
-  body main .nav-menu img {
-    display: none;
-  }
-  body main .nav-menu .menu-itens {
-    display: none;
-  }
-  body main #show-menu {
+  body main .menu #show-menu {
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -745,29 +767,25 @@ main div:target {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transition: left 0.5s;
-    transition: left 0.5s;
-    position: fixed;
-    left: 0px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
   }
-  body main #show-menu span {
+  body main .menu #show-menu span {
     background-color: var(--orange-100);
     border-radius: 0 50% 50% 0;
     width: 25px;
     height: 40px;
     padding: 8px;
   }
-  body main #show-menu span #icon-menu {
-    background-image: url(/assets/arrow.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+  body main .menu #show-menu span .hide-icon {
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  body main .menu #show-menu span #icon-menu {
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s;
-    -webkit-transform: rotateZ(180deg);
-            transform: rotateZ(180deg);
     width: 100%;
     height: 100%;
   }
