@@ -267,7 +267,33 @@ body{
                 }
               }
               .video-link{
-               
+               position: relative;
+               .video-dados{
+                  position: absolute;
+                  background: var(--brown);
+                  width: 100%;
+                  height: 100%;
+                  color: var(--white);
+                  padding: 3.5rem 3.2rem;
+
+                  .profile-video{
+                    border-radius: 100%;
+                    width: 8.4rem;
+                    height: 8.4rem;
+                    border: 0.1rem solid var(--orange-100);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 1.7rem;
+
+                    img{
+                      width: 90%;
+                      height: 90%;
+                      border-radius: 100%;
+                    }
+                  }
+                  
+               }
                 iframe{
                   width: 100%;
                   height: 43.9rem;
@@ -465,6 +491,9 @@ body{
 
                 img:nth-child(2){
                   margin: 0rem 5rem;
+                }
+                img{
+                  width: 6rem;
                 }
               } 
               p{
@@ -1173,9 +1202,15 @@ main div:target{
 }
 
 @media(max-width:320px){
-
+  html{
+    main {
+      .container {
+        .container-footer {
+          .padding-footer{
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
 }
-// 320px — 480px: dispositivos móveis
-// 481px — 768px: iPads, tablets
-// 769px — 1024px: telas pequenas, laptops
-// 1025px — 1200px: desktops, telas 
