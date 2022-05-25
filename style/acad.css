@@ -270,6 +270,10 @@ body main .container .container-main .margin .container-column .column-video {
   padding-right: 3.1rem;
 }
 
+body main .container .container-main .margin .container-column .column-video .video-title {
+  width: 100%;
+}
+
 body main .container .container-main .margin .container-column .column-video .video-title h5 {
   font-style: normal;
   font-weight: 900;
@@ -1140,6 +1144,7 @@ main div:target {
             align-items: center;
     background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0)));
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 100000;
   }
   body main .menu #show-menu span {
     background-color: var(--orange-100);

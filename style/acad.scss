@@ -1088,7 +1088,7 @@ main div:target{
         justify-content: center;
         align-items: center;
         background: linear-gradient(90deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
-   
+        z-index: 100000;
         span{
           background-color: var(--orange-100);
           border-radius: 0 50% 50% 0;
