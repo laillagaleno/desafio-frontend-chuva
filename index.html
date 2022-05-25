@@ -224,27 +224,29 @@
                                                     <img src="/assets/bolde.svg" alt="">
                                                     <img src="/assets/italico.svg" alt="">
                                                 </div>
-                                                <button>Enviar</button>
+                                                <button id="button-edit">Enviar</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="talk-confirm fc">
-                                    <h6>Seu tópico foi enviado com sucesso! :D</h6>
-                                    <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
-                                    <a href="">Descubra outros trabalhos!</a>
+                                    <div class="fc f-a-center">
+                                        <h6>Seu tópico foi enviado com sucesso! :D</h6>
+                                        <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                                        <a>Descubra outros trabalhos!</a>
+                                    </div>
+                                    
                                     <div class="talk-button">
                                         <button class="fr f-a-center f-j-spaceEvenly">
-                                            <img src="/assets/add.svg" alt="Ícone de adicionar novo tópico">
-                                            <span>criar tópico</span>
+                                            <span>criar novo tópico</span>
                                         </button>
                                     </div>
                                 </div>
 
                            
                                 <div class="talk-comments">
-                                    <div  class="fc talk-card">
+                                    <div class="fc talk-card comment-new">
                                         <div class="fc talk-comment">
                                             <i>Assunto da pergunta aparece aqui</i>
                                             <a>Carlos Henrique Santos</a>
@@ -267,32 +269,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="fc comment-answer answer-autor">
-                                            <div class="fr f-j-spaceBetween answer-head">
-                                                <a href="">Adriano da Silva</a>
-                                                <div class="fr f-a-center">
-                                                    <p>Autor</p>
-                                                    <img src="/assets/correct.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
-                                            </p>
-                                        </div>
-
-                                        <div class="fc comment-answer answer-user">
-                                            <div class="fr f-j-spaceBetween answer-head">
-                                                <a href="">Carlos Henrique Santos</a>
-                                            </div>
-                                            <p>
-                                                Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
-                                            </br> </br>
-                                                Obrigada pela resposta, muito interessante o seu trabalho! 
-                                            </p>
-                                            <p>
-
-                                            </p>
-                                        </div>
 
                                         <div class="talk-opacity fc f-a-center">
                                             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -302,6 +278,111 @@
                                             <a href="">Editar tópico</a>
                                         </div>
                                     </div>
+
+                                     <div  class="fc talk-card">
+                                        <div class="fc talk-comment">
+                                            <i>Assunto da pergunta aparece aqui</i>
+                                            <a>Carlos Henrique Santos</a>
+                                            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</p>
+                                           
+                                            <div class="fr comment-buttons"> 
+                                                <div>
+                                                    <img src="/assets/more.svg" alt="Ícone de menu">
+                                                </div>
+                                                <div>
+                                                    <button>
+                                                        <img src="/assets/heart.svg" alt="Ícone de coração">
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a>1 like</a>
+                                                </div>
+                                                <div>
+                                                    <a>1 resposta</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div  id="comments" class="fc talk-card">
+                                        <div class="fc talk-comment">
+                                            <i>Assunto da pergunta aparece aqui</i>
+                                            <a>Carlos Henrique Santos</a>
+                                            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</p>
+                                           
+                                            <div class="fr comment-buttons"> 
+                                                <div>
+                                                    <img src="/assets/more.svg" alt="Ícone de menu">
+                                                </div>
+                                                <div>
+                                                    <button>
+                                                        <img src="/assets/heart.svg" alt="Ícone de coração">
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a>1 like</a>
+                                                </div>
+                                                <div>
+                                                    <a>1 resposta</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="2" class="comments-num">
+                                            <div class="fc comment-answer answer-autor">
+                                                <div class="fr f-j-spaceBetween answer-head f-a-center">
+                                                    <a href="">Adriano da Silva</a>
+                                                    <div class="fr f-a-center">
+                                                        <p>Autor</p>
+                                                        <img src="/assets/correct.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                                </p>
+                                            </div>
+    
+                                            <div class="fc comment-answer answer-user">
+                                                <div class="fr f-j-spaceBetween">
+                                                    <a href="">Carlos Henrique Santos</a>
+                                                </div>
+                                                <p>
+                                                    Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
+                                                </br> </br>
+                                                    Obrigada pela resposta, muito interessante o seu trabalho! 
+                                                </p>
+                                            </div>
+
+                                            <div class="fc comment-answer answer-autor">
+                                                <div class="fr f-j-spaceBetween answer-head f-a-center">
+                                                    <a>Carmila Ferreira Andrade</a>
+                                                    <div class="fr f-a-center">
+                                                        <p>Coautor</p>
+                                                        <img src="/assets/correct.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                                    <br> <br>
+                                                    Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                                </p>
+                                            </div>
+
+                                            <div class="fc comment-answer answer-autor">
+                                                <div class="fr f-j-spaceBetween answer-head f-a-center">
+                                                    <a>Ana Carolina</a>
+                                                    <div class="fr f-a-center">
+                                                        <p>Coautor</p>
+                                                        <img src="/assets/correct.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
                                 </div>
                             </div>
                            

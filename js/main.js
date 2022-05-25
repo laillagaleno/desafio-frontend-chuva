@@ -1,5 +1,3 @@
-
-
 $( document ).ready(function() {
 
      window.location.assign("#nav1");
@@ -25,7 +23,6 @@ $( document ).ready(function() {
  });
 
  //dinamica do menu
-
  const btnMenu = document.querySelector("#icon-menu");
  const menu = document.querySelector(".nav-menu");
 
@@ -67,3 +64,51 @@ bnt.addEventListener("click",function(){
           more.innerHTML = "ver mais";
      }
 })
+
+
+//dinamica dos comentarios
+const bntComment = document.querySelectorAll(".talk-button");
+const bntEdit = document.querySelector("#button-edit");
+
+const talkEdit = document.querySelector(".talk-edit");
+const talkHome = document.querySelector(".talk-home");
+const talkConfirm = document.querySelector(".talk-confirm");
+
+const commentNew= document.querySelector(".comment-new");
+
+for(var i = 0; i < bntComment.length; i++){
+     bntComment[i].addEventListener("click", function(){
+          edit();
+          if(talkHome.className.endsWith("hide-talk-ocult")){
+               confirm();
+          }else{
+               home();
+          }
+     })
+}
+bntEdit.addEventListener("click", function(){
+     edit();
+     confirm();
+     commentNew.classList.toggle("hide-new");
+
+})
+function home(){
+     talkHome.classList.toggle("hide-talk-ocult");
+}
+function confirm(){
+     talkConfirm.classList.toggle("hide-talk-view");
+}
+function edit(){
+     talkEdit.classList.toggle("hide-talk-view");
+}
+
+//dinamica dos comentarios
+
+const talkCard = document.querySelector("#comments");
+
+const commentsNum = document.querySelector(".comments-num");
+     talkCard.addEventListener("click", function(){
+         commentsNum.classList.toggle("hide-comments-num")
+     })
+
+

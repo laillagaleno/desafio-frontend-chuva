@@ -431,13 +431,17 @@ body main .container .container-main .margin .container-line > div {
   margin-top: 3.0rem;
 }
 
+body main .container .container-main .margin .container-line .line-abstract .abstract-text {
+  cursor: pointer;
+}
+
 body main .container .container-main .margin .container-line .line-abstract .abstract-text div {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
   line-height: 2.3rem;
   letter-spacing: 0.03rem;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -460,8 +464,9 @@ body main .container .container-main .margin .container-line .line-abstract .abs
   color: var(--orange-100);
   font-weight: bold;
   background: none;
-  font-size: 1.4rem;
   cursor: pointer;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 body main .container .container-main .margin .container-line .talk-add {
@@ -546,6 +551,10 @@ body main .container .container-main .margin .container-line .talk-button::after
   height: 0.1rem;
 }
 
+body main .container .container-main .margin .container-line .talk-edit {
+  display: none;
+}
+
 body main .container .container-main .margin .container-line .talk-edit p {
   text-align: center;
   margin-bottom: 2.2rem;
@@ -628,6 +637,10 @@ body main .container .container-main .margin .container-line .talk-edit::after {
   margin-top: 1.5rem;
 }
 
+body main .container .container-main .margin .container-line .talk-confirm {
+  display: none;
+}
+
 body main .container .container-main .margin .container-line .talk-confirm h6 {
   margin-top: 1.5rem;
   margin-bottom: 1.8rem;
@@ -637,6 +650,14 @@ body main .container .container-main .margin .container-line .talk-confirm h6 {
 body main .container .container-main .margin .container-line .talk-confirm p {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+body main .container .container-main .margin .container-line .talk-confirm a {
+  margin-bottom: 4rem;
+}
+
+body main .container .container-main .margin .container-line .talk-confirm button {
+  padding: 0.7rem 5.4rem;
 }
 
 body main .container .container-main .margin .container-line i {
@@ -684,6 +705,7 @@ body main .container .container-main .margin .container-line a:hover {
 }
 
 body main .container .container-main .margin .container-line .talk-comments .talk-card {
+  margin-top: 1.5rem;
   position: relative;
   border: 0.1rem solid var(--gray-50);
   -webkit-box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.12);
@@ -703,6 +725,7 @@ body main .container .container-main .margin .container-line .talk-comments .tal
 }
 
 body main .container .container-main .margin .container-line .talk-comments .talk-card .talk-comment {
+  cursor: pointer;
   padding: 1.7rem 2.3rem;
 }
 
@@ -750,36 +773,53 @@ body main .container .container-main .margin .container-line .talk-comments .tal
   width: 1.2rem;
 }
 
-body main .container .container-main .margin .container-line .talk-comments .talk-card .comment-answer {
+body main .container .container-main .margin .container-line .talk-comments .talk-card .comments-num {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+body main .container .container-main .margin .container-line .talk-comments .talk-card .comments-num .comment-answer {
   border-top: 0.1rem solid var(--gray-50);
 }
 
-body main .container .container-main .margin .container-line .talk-comments .talk-card .comment-answer p {
+body main .container .container-main .margin .container-line .talk-comments .talk-card .comments-num .comment-answer p {
   margin-right: 4rem;
 }
 
-body main .container .container-main .margin .container-line .talk-comments .talk-card .answer-autor {
+body main .container .container-main .margin .container-line .talk-comments .talk-card .comments-num .answer-autor {
   background: #F8F8F8;
   padding: 1.8rem 2.4rem 3.5rem 2.4rem;
 }
 
-body main .container .container-main .margin .container-line .talk-comments .talk-card .answer-autor .answer-head {
+body main .container .container-main .margin .container-line .talk-comments .talk-card .comments-num .answer-autor .answer-head {
   margin-bottom: 1rem;
 }
 
-body main .container .container-main .margin .container-line .talk-comments .talk-card .answer-autor .answer-head p {
+body main .container .container-main .margin .container-line .talk-comments .talk-card .comments-num .answer-autor .answer-head p {
   color: var(--orange-100);
   font-weight: 700;
   margin-right: 1.3rem;
 }
 
-body main .container .container-main .margin .container-line .talk-comments .talk-card .answer-autor .answer-head img {
+body main .container .container-main .margin .container-line .talk-comments .talk-card .comments-num .answer-autor .answer-head img {
   margin-right: 0.5rem;
   width: 2.1rem;
 }
 
-body main .container .container-main .margin .container-line .talk-comments .talk-card .answer-user {
+body main .container .container-main .margin .container-line .talk-comments .talk-card .comments-num .answer-user {
   padding: 1.8rem 2.4rem;
+}
+
+body main .container .container-main .margin .container-line .talk-comments .talk-card .comments-num .answer-user a {
+  margin-bottom: 1rem;
+}
+
+body main .container .container-main .margin .container-line .talk-comments .talk-card .hide-comments-num {
+  height: 100%;
+  opacity: 100%;
 }
 
 body main .container .container-main .margin .container-line .talk-comments .talk-card .talk-opacity {
@@ -793,7 +833,6 @@ body main .container .container-main .margin .container-line .talk-comments .tal
   border: 1px solid var(--gray-50);
   border-radius: 4px;
   text-align: center;
-  display: none;
 }
 
 body main .container .container-main .margin .container-line .talk-comments .talk-card .talk-opacity svg path {
@@ -803,6 +842,23 @@ body main .container .container-main .margin .container-line .talk-comments .tal
 body main .container .container-main .margin .container-line .talk-comments .talk-card .talk-opacity i {
   margin: 0.8rem 0;
   color: var(--gray-550);
+}
+
+body main .container .container-main .margin .container-line .talk-comments .comment-new {
+  display: none;
+}
+
+body main .container .container-main .margin .container-line .talk-comments .hide-new {
+  display: -ms-grid;
+  display: grid;
+}
+
+body main .container .container-main .margin .container-line .hide-talk-view {
+  display: inline;
+}
+
+body main .container .container-main .margin .container-line .hide-talk-ocult {
+  display: none;
 }
 
 body main .container .container-footer {
@@ -841,7 +897,7 @@ body main .container .container-footer .padding-footer .footer-logo div i {
 }
 
 body main .container .container-footer .padding-footer .footer-logo div i::after {
-  content: ' ';
+  content: " ";
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
@@ -849,10 +905,11 @@ body main .container .container-footer .padding-footer .footer-logo div i::after
   background: #a8a8b3;
   margin-right: 0.8rem;
   margin-left: 0.5rem;
+  width: 4.5rem;
 }
 
 body main .container .container-footer .padding-footer .footer-logo div i::before {
-  content: ' ';
+  content: " ";
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
@@ -860,6 +917,7 @@ body main .container .container-footer .padding-footer .footer-logo div i::befor
   background: #a8a8b3;
   margin-right: 0.5rem;
   margin-left: 0.8rem;
+  width: 4.5rem;
 }
 
 body main .container .container-footer .padding-footer .footer-logo button {
