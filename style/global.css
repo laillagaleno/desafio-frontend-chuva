@@ -100,14 +100,19 @@ a{
   --gradient-menu: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
   --gradient-link: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
   --gradient-button: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  --gradient-edit: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
 
   --orange-50: #FDF1EB;
   --orange-100: #ED7839;
+  --orange-500: #F48F44;
   --orange-gray: #725C5C;
   --purple: #71478E;
   --danger:#F85959;
 
   --white:#FFFFFF;
+  --white-50:#EAF1F2;
+  --white-100:#CCCCCC;
+
   --gray-background-10: #F8F8F8;
   --gray-border:#ECECEC;
  

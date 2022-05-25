@@ -75,7 +75,7 @@
                         <h4>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h4>
                         <i>Issn: 1234-5678</i>
                     </div>
-                    <div class="fr f-center">
+                    <div class="teste fr f-center">
                         <div class="fc container-language">
                             <div class="select fr f-center f-j-spaceEvenly">
                                 <img src="/assets/language.svg" alt="Ícone do botão de linguagem">
@@ -87,14 +87,13 @@
                                 <li class="option">pt, br</li>
                                 <li class="option">en, en</li>
                             </ul>
-            
                         </div>
                         <div class="container-autor fr">
                             <div class="autor-infor"> 
                                 <p>Bem vindo!</p>
                                 <a href="mailto: alguem12@galoascience.com">alguem12@galoascience.com</a>
                             </div>
-                            <div>
+                            <div class="autor-user">
                                 <div>
                                     <i>2</i>
                                 </div>
@@ -190,44 +189,117 @@
                                 <h5>Discussões</h5>
                             </div>
                             <div class="margin-main">
-                               <div class="fc f-center talk-add"> 
-                                   <h6>Compartilhe suas ideias ou dúvidas com os autores!</h6>
-                                    <div class="icons">
-                                        <img src="/assets/icone1.svg" alt="Ícone de ecologia">
-                                        <img src="/assets/icone2.svg" alt="Ícone de linguagem">
-                                        <img src="/assets/icone3.svg" alt="Ícone de ideias">
-                                    </div>
-                                    <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-                                </div>
-                                <div class="talk-button">
-                                    <hr>
-                                    <button class="fr f-a-center f-j-spaceEvenly">
-                                        <img src="/assets/add.svg" alt="Ícone de adicionar novo tópico">
-                                        <span>criar tópico</span>
-                                    </button>
+                                <div class="talk-home">
+                                    <div class="fc f-center talk-add"> 
+                                        <h6>Compartilhe suas ideias ou dúvidas com os autores!</h6>
+                                         <div class="icons">
+                                             <img src="/assets/icone1.svg" alt="Ícone de ecologia">
+                                             <img src="/assets/icone2.svg" alt="Ícone de linguagem">
+                                             <img src="/assets/icone3.svg" alt="Ícone de ideias">
+                                         </div>
+                                         <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+                                     </div>
+                                     <div class="talk-button">
+                                         <button class="fr f-a-center f-j-spaceEvenly">
+                                             <img src="/assets/add.svg" alt="Ícone de adicionar novo tópico">
+                                             <span>criar tópico</span>
+                                         </button>
+                                     </div>
                                 </div>
                                 
-                                <div>
-                                    <div  class="talk-comment fc">
-                                        <i>Assunto da pergunta aparece aqui</i>
-                                        <a>Carlos Henrique Santos</a>
-                                        <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo</p>
-                                       
-                                        <div class="fr comment-buttons"> 
-                                            <div>
-                                                <img src="/assets/more.svg" alt="Ícone de menu">
+                                <div class="talk-edit fc">
+                                    <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                                 
+                                    <div class="fc edit-title">
+                                        <i>Assunto</i>
+                                        <input type="text" placeholder="Defina um tópico sucinto para notificar os autores...">
+                                    </div>
+                                    <div>
+                                        <i>Conteúdo</i>
+                                        <div class="box-edit">
+                                            <textarea name="texto" ></textarea>
+
+                                            <div class="fr f-a-center f-j-spaceBetween edit-button">
+                                                <div>
+                                                    <img src="/assets/bolde.svg" alt="">
+                                                    <img src="/assets/italico.svg" alt="">
+                                                </div>
+                                                <button>Enviar</button>
                                             </div>
-                                            <div>
-                                                <button>
-                                                    <img src="/assets/heart.svg" alt="Ícone de coração">
-                                                </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="talk-confirm fc">
+                                    <h6>Seu tópico foi enviado com sucesso! :D</h6>
+                                    <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                                    <a href="">Descubra outros trabalhos!</a>
+                                    <div class="talk-button">
+                                        <button class="fr f-a-center f-j-spaceEvenly">
+                                            <img src="/assets/add.svg" alt="Ícone de adicionar novo tópico">
+                                            <span>criar tópico</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                           
+                                <div class="talk-comments">
+                                    <div  class="fc talk-card">
+                                        <div class="fc talk-comment">
+                                            <i>Assunto da pergunta aparece aqui</i>
+                                            <a>Carlos Henrique Santos</a>
+                                            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</p>
+                                           
+                                            <div class="fr comment-buttons"> 
+                                                <div>
+                                                    <img src="/assets/more.svg" alt="Ícone de menu">
+                                                </div>
+                                                <div>
+                                                    <button>
+                                                        <img src="/assets/heart.svg" alt="Ícone de coração">
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a>1 like</a>
+                                                </div>
+                                                <div>
+                                                    <a>1 resposta</a>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <a>1 like</a>
+                                        </div>
+                                        <div class="fc comment-answer answer-autor">
+                                            <div class="fr f-j-spaceBetween answer-head">
+                                                <a href="">Adriano da Silva</a>
+                                                <div class="fr f-a-center">
+                                                    <p>Autor</p>
+                                                    <img src="/assets/correct.svg" alt="">
+                                                </div>
                                             </div>
-                                            <div>
-                                                <a>1 resposta</a>
+                                            <p>
+                                                Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                            </p>
+                                        </div>
+
+                                        <div class="fc comment-answer answer-user">
+                                            <div class="fr f-j-spaceBetween answer-head">
+                                                <a href="">Carlos Henrique Santos</a>
                                             </div>
+                                            <p>
+                                                Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.
+                                            </br> </br>
+                                                Obrigada pela resposta, muito interessante o seu trabalho! 
+                                            </p>
+                                            <p>
+
+                                            </p>
+                                        </div>
+
+                                        <div class="talk-opacity fc f-a-center">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.6603 7.33594C20.8426 7.51823 20.9337 7.73958 20.9337 8C20.9337 8.26042 20.8426 8.48177 20.6603 8.66406L9.09778 20.2266C8.91549 20.4089 8.69413 20.5 8.43372 20.5C8.1733 20.5 7.95194 20.4089 7.76965 20.2266L1.20715 13.6641C1.02486 13.4818 0.933716 13.2604 0.933716 13C0.933716 12.7396 1.02486 12.5182 1.20715 12.3359L2.76965 10.7734C2.95194 10.5911 3.1733 10.5 3.43372 10.5C3.69413 10.5 3.91549 10.5911 4.09778 10.7734L8.43372 15.1484L17.8087 5.77344C17.965 5.59115 18.1733 5.5 18.4337 5.5C18.6941 5.5 18.9155 5.59115 19.0978 5.77344L20.6603 7.33594ZM8.00403 11.4766L3.62903 7.10156C3.31653 6.78906 3.31653 6.48958 3.62903 6.20312L5.38684 4.44531C5.51705 4.3151 5.66028 4.25 5.81653 4.25C5.99882 4.25 6.15507 4.3151 6.28528 4.44531L8.43372 6.59375L14.3712 0.695312C14.4754 0.565104 14.6056 0.5 14.7618 0.5C14.9441 0.5 15.1004 0.565104 15.2306 0.695312L16.9884 2.45312C17.3009 2.73958 17.3009 3.03906 16.9884 3.35156L8.8634 11.4766C8.75924 11.6068 8.61601 11.6719 8.43372 11.6719C8.25142 11.6719 8.10819 11.6068 8.00403 11.4766Z" fill="#ED7839"/>
+                                            </svg>
+                                            <i>Aguardando feedback dos autores</i>
+                                            <a href="">Editar tópico</a>
                                         </div>
                                     </div>
                                 </div>

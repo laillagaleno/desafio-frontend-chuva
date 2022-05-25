@@ -50,6 +50,7 @@ for(var i = 0; i < item.length; i++)
   item[i].addEventListener('click', function(e) {    
     select.innerHTML = this.textContent;
     e.stopPropagation();
+    itens.classList.toggle("hide-drowp");
   });
 
 
@@ -66,5 +67,3 @@ bnt.addEventListener("click",function(){
           more.innerHTML = "ver mais";
      }
 })
-
-// e.target.firstChild.textContent
